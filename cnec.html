@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>entering your phone number</title>
+	<script type="text/javascript">
+		var reg = /^[0-9]{5}-[0-9]{7}-[0-9]{1}$/;
+		function cnic_validation(cnic)
+		{
+			var OK = reg.exec(cnic.value);
+			if(!OK)
+			{
+              window.alert("invalid cnic number");
+			}
+			else
+			{
+				window.alert("Valid cnic Numbers");
+			}
+		}
+	</script>
+</head>
+<body>
+	<p>Enter phone number and press enter</p>
+	<form>
+		<input type="text" name="phone" onchange="cnic_validation(this);">
+	</form>
+
+</body>
+</html>

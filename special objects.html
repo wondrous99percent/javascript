@@ -1,0 +1,33 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>booleans special objects</title>
+</head>
+<body>   
+	     <script>
+	      document.write("<h3>with argument</h3>")
+	     	function hello()
+	     	{
+	        this.model="pawan";
+       	    this.colors="blue";
+             }
+             var car=new hello("pawan,blue")
+       	document.write(car.model+"<br>");
+       	document.write(car.colors+"<br>");
+
+       	 document.write("<h3>Boolens</h3>");
+       	 var b=new Boolean(2>1)
+       	 document.write(b);
+
+       	 document.write("<h3>Numbers</h3>");
+       	 var num=new Number(234)
+       	 document.write(num+"<br>");
+       	 var num1=new Number(2.345555)
+       	 var num2=num1.toExponential()
+       	 document.write(num2+"<br"); 
+     	 
+       	
+         </script>
+</body>
+</html>

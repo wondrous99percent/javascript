@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<title>Mouse pointers</title>
+	<meta charset="utf-8">
+</head>
+<body>
+      <style>
+            p{
+                  color: #660000;
+                  font-size: 20px;
+                  background-color: green;
+            }
+      </style>
+      <script>
+      	function jai()
+      	{
+      		document.getElementById("vikram").innerHTML="mouse pointer has been occured";
+      	}
+
+      </script>
+      <p id="vikram"></p>
+      <button ondblclick="jai()">double click</button>
+      <button onclick="jai()">click</button>
+      <button oncontextmenu="jai()">Rightclick</button>
+      <button onmousedown="jai()">Mouse down</button>
+      <button onmouseup="jai()">Mouse up</button>
+      <button onmouseenter="jai()">Mouse enter</button>
+      <button onmouseleave="jai()">Mouse leave</button>
+      <button onmouseover="jai()">Mouse over</button>
+      <button onmouseout="jai()">Mouse out</button>
+      <button onmousemove="jai()">Mouse move</button>
+      
+      
+</body>
+</html>

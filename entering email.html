@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>entering your email identification</title>
+	<script type="text/javascript">
+		var reg = /^[_a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-z0-9]+(\.[a-z0-9]+)*(\.[a-z]{2,})$/;
+		function email_validation(email)
+		{
+			var OK = reg.exec(email.value);
+			if(!OK)
+			{
+              window.alert("invalid email");
+			}
+			else
+			{
+				window.alert("Valid email");
+			}
+		}
+	</script>
+</head>
+<body>
+	<p>Enter phone number and press enter</p>
+	<form>
+		<input type="text" name="phone" onchange="email_validation(this);">
+	</form>
+
+</body>
+</html>

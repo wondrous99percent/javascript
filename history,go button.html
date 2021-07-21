@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>history,go objects</title>
+	<body>
+	<script>
+		document.write(window.history.length);
+		function forward_a()
+		 {
+		 	document.write(window.history.forward()+"<br>");
+			
+		}
+		function backward_a()
+		 {
+		 	document.write(window.history.back());
+			
+		}
+		function go_a(i)
+		{
+			document.write(window.history.go(i));
+		}
+
+    </script>
+    <button onclick="forward_a()">click to forward</button>
+    <button onclick="backward_a()">click to backward</button>
+    <br><br>
+    <button onclick="go_a(+1)">click to go to first page</button>
+    <button onclick="go_a(-1 )">click to go to last page</button>
+
+</body>
+</html>

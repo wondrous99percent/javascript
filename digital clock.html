@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>timing objects</title>
+	<body>
+	<script>
+	      function myTime()
+	      {
+               var a=new Date();
+               document.getElementById("vikram").innerHTML=a.toLocaleTimeString();
+	      }	      
+    </script>
+    <p id="vikram"></p>
+    <button onclick="setInterval('myTime()',1000)">start</button>
+    
+
+</body>
+</html>

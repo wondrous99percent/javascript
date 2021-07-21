@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>inner html in javascript-alert,confirm,prompt box</title>
+</head>
+<body>
+    <h3>there are three types of box in javascripts.</h3>
+    <h3>1.Alert box</h3>
+    <h3>2.Confirm box</h3>
+    <h3>3.Prompt box</h3>
+<script type="text/javascript">
+    function show()
+    {
+      alert("how are you");
+
+    }
+    function show1()
+    {
+        var result=confirm("hello\n world"); 
+        if(result==true)
+        {
+            document.getElementById("abc").innerHTML="you pressed okay";
+        }
+        else
+        {
+            document.getElementById("abc").innerHTML="you pressed cancel";
+        }
+    }
+    function show2()
+    {
+        var out=prompt("enter your name","ADITYAVEER JAIDEV VIKRAMADITYA")
+        document.getElementById("abc").innerHTML="thanks: "+out+" for giving time.";
+    }
+</script>
+<button onclick="show()">click here to show alert box</button><br><br><br>
+<button onclick="show1()">click here to show confirm box</button><br><br><br>
+<button onclick="show2()">click here to show prompt box</button><br><br><br>
+<p id="abc"></p>
+</body>
+</html>
+
+</body>
+</html>

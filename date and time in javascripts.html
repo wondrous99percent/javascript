@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>date and time in javascripts</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	document.write("date and time objects")
+	var n=Date();
+	document.write(n+"<br>");
+	var m=new Date()
+	m.setHours(10);
+	m.setMinutes(44);
+	document.write(m.getHours()+":"+m.getMinutes())
+	document.write("PM")
+	document.write("<br>")	
+	m.setDate(18);
+	m.setMonth(11);
+	m.setYear(2018);
+	document.write(m.getDate()+"/"+m.getMonth()+"/"+m.getYear());
+</script>
+</body>
+</html>

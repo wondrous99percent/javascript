@@ -1,0 +1,22 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>INNER HTML</title>
+</head>
+<body>
+<script type="text/javascript">
+	function changeText()
+	{
+		var a=document.getElementById("abc").value;
+		document.getElementById("cde").innerHTML=a;
+	}
+</script>   
+	     	      
+       	 <p>welcome to my site<b id="cde">  SHIVENDRA</b></p>
+       	 <input type="text" id="abc" placeholder="click here">
+       	 <input type="button" value="click here" onclick="changeText()">
+       	 
+         
+</body>
+</html>

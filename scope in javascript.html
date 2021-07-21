@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>scope</title>
+</head>
+<body>
+	<script>
+		window.a="hello"
+		function jai()
+		{
+			
+			document.write(window.a);
+		}
+		function vikram()
+		{
+			
+			document.write(a);
+		}
+	</script>
+	<button onclick="jai()">click here</button>
+	<button onclick="vikram()">click here</button>
+
+</body>
+</html>

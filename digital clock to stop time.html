@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>timing objects</title>
+	<body>
+	<script>
+		var x=setInterval(function(){myTime()},1000)
+		
+	      function myTime()
+	      {
+               var a=new Date();
+               document.getElementById("vikram").innerHTML=a.toLocaleTimeString();
+	      }	      
+    </script>
+    <p id="vikram"></p>
+    <button onclick="clearInterval(x)">start</button>
+    
+
+</body>
+</html>

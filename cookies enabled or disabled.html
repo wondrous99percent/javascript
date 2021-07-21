@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>cookie Events</title>
+	<meta charset="utf-8">
+</head>
+<body>
+      <script onload="jai()">
+      	var a="" ;
+      	function jai()
+      	{
+      		if(navigator.cookieEnabled==true)
+      		{
+      			a="cookies are enabled";
+      		}
+      		else
+      		{
+      			a="cookies are disabled";
+      		}
+      		document.getElementById("vikram").innerHTML=a;
+      	}
+
+      </script>
+      <p id="vikram"></p>
+      
+</body>
+</html>

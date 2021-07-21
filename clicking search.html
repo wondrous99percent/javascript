@@ -1,0 +1,19 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>INNER HTML</title>
+</head>
+<body>
+<script type="text/javascript">
+	function changeText()
+	{
+		var c=document.getElementById("klm").innerHTML;
+		document.getElementById("klm").innerHTML=c+"<p style='border:1px solid green'>this is new tag.</p>"
+		
+	}
+</script> 
+<div id="klm" style="border:1px solid red;">this is a div tag</div><br>
+<button onclick="changeText()">click here</button>  
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>global</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var myWindow;
+		function openWin()
+		{
+			myWindow=window.open(" ","myWindow","width=400,height=300"); 
+			
+		}
+		function closeWin()
+		{
+			if(myWindow)
+			{
+			myWindow.close();
+		    }
+		}
+		function checkWin()
+		{
+			if(!myWindow)
+			{
+               document.getElementById("jai").innerHTML="you haven't open window yet";
+			}
+			else
+			{
+				if(myWindow.closed)
+				{                   
+               document.getElementById("jai").innerHTML="window has been closed";
+				}
+				else
+				{
+
+               document.getElementById("jai").innerHTML="window is not yet closed";
+				}
+			}
+		}
+	</script>
+	<button onclick="openWin()">open window</button>	
+	<button onclick="closeWin()">close window</button>
+	<button onclick="checkWin()">check window</button>
+	<br><br>
+	<div id="jai"></div>
+
+</body>
+</html>

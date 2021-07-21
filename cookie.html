@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<body>
+	<script>
+             var caution=false
+             function setCookie(name,value,expires,path,domain,secure){
+             	var curCookie = name + "=" + escape(value) +
+             	((expires) ? "; expires=" + expires.toGMTString() : "") +
+             	((path) ? "; path=" + path : "") +
+             	((domain) ? "; domain=" + domain : "") +
+             	((secure) ? "; secure=" + secure.toGMTString() : "") +
+             	if(!caution || (name + "=" + escape(value)).length <= 4000)
+             		document.cookies = curCookie
+             	else
+             		if(confirm("Cookie exceeds 4KB and will be cut"))
+             			document.cookie = curCookie
+             	}
+             	function getCookie(name) {
+             		var prefix =name + "="
+             		var cookieStartIndex = document.cookie.indexOf(prefix)
+             		if(cookieStartIndex == -1)
+             			return null
+             		var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex = prefix.length)
+             		if(cookieEndIndex == -1)
+             			cookieEndIndex = document.cookie.length
+             		return unescape(document.cookie.substring(cookieStartIndex = prefix.length,cookieEndIndex))
+             	}
+
+             
+	</script>
+
+</body>
+</html>

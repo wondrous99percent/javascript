@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>entering your phone number</title>
+	<script type="text/javascript">
+		var reg = /^[0-9+]{13}$/;
+		function phone_validation(phone)
+		{
+			var OK = reg.exec(phone.value);
+			if(!OK)
+			{
+              window.alert("invalid phone number");
+			else
+			{
+			}
+				window.alert("Valid Phone Numbers");
+			}
+		}
+	</script>
+</head>
+<body>
+	<p>Enter phone number and press enter</p>
+	<form>
+		<input type="text" name="phone" onchange="phone_validation(this);">
+	</form>
+
+</body>
+</html>

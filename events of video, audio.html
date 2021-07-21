@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>global</title>
+</head>
+<body> 
+	<script>
+	function abc()
+	{
+      document.getElementById("jai").innerHTML="video is not playing."
+	}
+</script>
+	<video src="pitaji pandey.jpg" controls onerror="abc()" height="300px" width="400px">
+	</video>
+	<P id="jai"></P>
+	<script>
+	function abc()
+	{
+      document.getElementById("jai").innerHTML="video is playing/paused/loading."
+	}
+</script>
+	<video src="batti gul meter chalu.mkv" controls onplay/onpause/onstartloading="abc()" height="300px" width="400px">
+	</video>
+	<P id="jai"></P>
+</body>
+</html>

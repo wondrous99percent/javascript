@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>keyboard events</title>
+	<meta charset="utf-8">
+</head>
+<body>
+      <style>
+            p{
+                  color:red;
+                  font-size: 20px;
+            }
+      </style>
+      <script>
+      	function jai()
+      	{
+      		document.getElementById("vikram").inneHTML="Text has been copied";
+      	}
+            function jai1()
+            {
+                  document.getElementById("vikram").innerHTML="Text has been paste";
+            }
+            function jai2()
+            {
+                  document.getElementById("vikram").innerHTML="Text has been cut";
+            }
+
+      </script>
+      <p id="vikram"></p>
+      <input type="text" oncopy="jai()" value="copy"/>
+      <input type="text" onpast="jai1()" value="paste"/>
+      <input type="text" oncut="jai2 ()" value="cut">
+      
+      
+      
+</body>
+</html>

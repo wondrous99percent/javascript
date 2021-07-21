@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>inner html in javascript</title>
+</head>
+<body>
+<script>
+	function abc()
+	 {
+	   var a=window.open("","poonam","width=300,height=200");
+       a.document.write("this is new window:"+a.name);
+       a.opener.document.write("this is old window: ");
+   }
+   </script>
+   <button onclick="abc()">click</button>
+</body>
+</html>

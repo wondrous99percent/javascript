@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>form events</title>
+</head>
+	<body>
+		<script>
+                  function abc()
+                  {
+                  	var a=document.getElementById("cde").value;
+                  	document.getElementById("no").innerHTML="you select the day: "+a;
+                  }
+		</script>
+		<select id="cde" onchange="abc()">
+			<option value="Sunday">Sunday</option>
+			<option value="Monday">Monday</option>
+			<option value="Tuesday">Tuesday</option>
+			<option value="Wednesay">Wednesday</option>
+			<option value="Thursday">Thursday</option>
+			<option value="Friday">Friday</option>
+			<option value="Saturday">Saturday</option>
+		</select>
+		<p id="no"></p>
+</body>
+</html>

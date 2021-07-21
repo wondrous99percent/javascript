@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Status</title>
+</head>
+<body>
+	<script>
+		document.write("this is window status")
+		function jai()
+		{
+			window.status="hello world";
+		}
+		document.write("<br><br>")
+
+
+		document.write("this is innerHeight")
+		function vikram()
+		{
+			var h=window.innerHeight;
+			var w=window.innerWidth;
+			document.getElementById("hye").innerHTML="width= "+w+"<br>Height= "+h;
+		}
+		document.write("<br><br>")
+
+
+	</script>
+	<br><br>
+	<button onclick="jai()">click</button>
+	<button onclick="vikram()">click</button>
+    <p id="hye"></p>
+</body>
+</html>

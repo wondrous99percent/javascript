@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>onhashchange events</title>
+</head>
+	<body onhashchange= "jai1()">
+		<script>
+		function jai()
+		{
+			window.location.hash="part2";
+			var a=window.loction.hash;
+			document.getElementById("no").innerHTML="Now: "+a;
+		}
+		function jai1()
+		{
+			window.alert("Anchor part has been changed.");
+		}
+    </script>
+    <button onclick="jai()">click</button>
+    <p id="no"></p>
+
+</body>
+</html>

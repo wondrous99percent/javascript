@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>global variable</title>
+</head>
+<body>
+<script>
+	function jai()
+	{
+       var a=window.open("","a","width=300px,height=300px");
+       a.document.write("this is my new window");
+       a.opener.document.write("this is old window");
+
+	}
+</script>
+<button onclick="jai()">click here</button>
+
+</body>
+</html>

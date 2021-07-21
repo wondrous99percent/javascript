@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>scroll by and scroll to</title>  
+	<script>
+
+		document.write("App code name is:"+navigator.appCodeName+"<br>");
+		document.write("app name is:"+navigator.appName+"<br>");		
+		document.write("app version is:"+navigator.appVersion+"<br>");
+		document.write("user agent is:"+navigator.userAgent+"<br>");
+		document.write("Product is:"+navigator.product+"<br>");
+		document.write("online:"+navigator.online+"<br>");
+		document.write("browser language:"+navigator.language+"<br>");
+		document.write("Cookie enabled:"+navigator.cookieEnabled+"<br>");
+		function jai()
+		{
+			var n=navigator.javaEnabled();
+			document.getElementById("vikram").innerHTML=n;
+		}
+	</script>
+	<button onclick="jai()">click</button>
+	<p id="vikram"></p>
+
+</body>
+</html>

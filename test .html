@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+</head>
+<body>
+	<script>
+		var str = "Subscribe our channel for more videos and visit www.w3webschool.net";
+		var patt = new RegExp("w3webschool.net");
+	
+		var result = patt.exec(str)
+		document.write(result)
+	</script>
+	<br><br>
+	<script>
+		var str = "Subscribe our channel for more videos and visit www.w3webschool.net";
+		var patt = new RegExp("w3webschool.net");
+	
+		var result = patt.test(str)
+		document.write(result)
+	</script>
+
+</body>
+</html>

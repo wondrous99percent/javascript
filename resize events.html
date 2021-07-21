@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>resize events</title>
+</head>
+	<body onresize="jai()">
+		<script>
+		function jai()
+		{
+			var h=window.outerHeight;
+			var w=window.outerWidth;
+			var a="width: "+w+", Height: "+h;
+			document.getElementById("vikram1").innerHTML=a;
+			document.getElementById("vikram").innerHTML="window is resizing";
+		}
+    </script>
+    <p id="vikram1"></p>
+    <p id="vikram"></p>
+
+</body>
+</html> 

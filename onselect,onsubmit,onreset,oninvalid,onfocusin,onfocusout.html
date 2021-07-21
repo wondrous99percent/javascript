@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>practice</title>
+</head>
+	<script>
+		document.write("ONINPUT COMMAND"+"<BR>")
+		 function abc()
+		 {
+		 	var a=document.getElementById("vikram").value;
+		 	document.getElementById("poonam").innerHTML="you wrote: "+a;
+		 }
+
+	</script>
+	<input type="text" id="vikram" oninput="abc()">
+	<p id="poonam"></p>
+	<script>
+
+		document.write("ONSEARCH COMMAND"+"<BR>")
+		 function bca()
+		 {
+		 	var a=document.getElementById("vikky").value;
+		 	document.getElementById("pooma").innerHTML="you are searching for: "+a;
+		 }
+		</script>
+
+	<input type="search" id="vikky" onsearch="bca()">
+	<p id="pooma"></p>
+	<script>
+
+		document.write("ONSELECT COMMAND"+"<BR>")
+		 function bcad()
+		 {
+		 	var a=document.getElementById("vikkya").value;
+		 	document.getElementById("poonma").innerHTML="you have select the following: "+a;
+		 }
+		</script>
+
+	<input type="text" id="vikkya" onselect="bcad()">
+	<p id="poonma"></p>
+	<script>
+
+		document.write("ONFOCUSIN COMMAND"+"<BR>")
+		function bba(x)
+		{
+			x.style.border="2px solid red";
+			x.style.background="pink";
+		}
+	</script>
+	<input type="text" onfocusin="bba(this)">
+	<br><br>
+	<script>
+
+		document.write("ONFOCUSOUT COMMAND"+"<BR>")
+		function bbae(x)
+		{
+			x.style.border="2px solid red";
+			x.style.background="pink";
+		}
+	</script>
+	<input type="text" onfocusout="bbae(this)">
+	<br><br>
+	<script>
+
+		document.write("ONINVALID COMMAND"+"<BR>")
+		function bbad()
+		{
+			alert("Please fill this field.")
+		}
+	</script>
+	<form oninvalid="bbad()" required>
+	<input type="text">	
+	<input type="submit" value="Submit">
+</form>
+<br><br>
+	<script>
+
+		document.write("ONSUBMIT COMMAND"+"<BR>")
+		
+		function bbac()
+		{
+			alert("you have filled the form");
+		}
+	</script>
+	<form onsubmit="bbac()" >
+	<input type="text" >
+	<input type="submit" value="Submit">
+</form>
+<br><br>
+	<script>
+
+		document.write("ONRESET COMMAND"+"<BR>")
+		
+		function bbaac()
+		{
+			alert("please reset the form");
+		}
+	</script>
+	<form onreset="bbaac()">
+	<input type="text" >
+	<input type="reset" value="reset">
+<br><br>
+	</script>
+
+
+</body>
+</html>

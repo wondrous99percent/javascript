@@ -1,0 +1,33 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>object in javascript</title>
+</head>
+<body>
+       <script>                                                               
+       	document.write("<h3>first method</h3>"+"<br>")
+       	var car=new Object()
+       	car.model="pawan";
+       	car.colors="blue";
+       	document.write(car.model+"<br>");
+       	document.write(car.colors+"<br>");
+       	document.write("<h3>second method</h3>"+"<br>")
+       	var bag={model:"pawam",colors:"blue"}
+       	document.write(bag.model+"<br>");
+       	document.write(bag.colors+"<br>");
+
+       	document.write("<h3>third method</h3>"+"<br>")
+       	var bag={model:"pawam",colors:"blue"}
+       	for(var i in bag)
+       	{
+       		document.write(bag[i]+"<br>")
+       	}
+              document.write(num2+"<br");         
+               var num1=new Number(2.345555)
+               var num2=num1.tofixed(2)
+               document.write(num2);
+
+       </script>
+</body>
+</html>
